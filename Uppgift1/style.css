@@ -1,0 +1,77 @@
+img {
+	width: 400px; /*bredden för bilden*/
+	height: 300px; /*höjden för bilden*/
+}
+
+body {
+	background-color: khaki; /*Ger en bakgrundsfärg*/
+	font-family: Arial, Verdana, sans-serif; /*Här bestäms fonten för allt innehåll som är i body, med Arial som förstahandsval*/
+}
+
+
+nav {
+	background-color: darkkhaki;/*En bakgrundsfärg på navbaren så att man tydligt ser vit text*/
+	width: 100%; /*Navigationsbaren spannar hela bredden på webbfönstret*/
+}
+
+/* Vill styla själva texten i navigationen. Så vi har navigationen-> och så har vi anchor taggen (själva länken), så det är den vi stylar nu*/
+nav a {
+	color: white;/*Vit text*/
+	font-size: 20px;/*Bestämmer hur stor fonten ska vara*/
+	padding-right: 15px; /*Vi gör så att texten har mellanrum mellan varandra*/
+	padding-left: 15px;
+	text-decoration: none; /*Gör så att det inte är understruket*/	
+}
+
+/*Här läggs en hover till så att den interagerar när muspekaren dras över anchor tagen i navbaren*/
+nav a:hover {
+	background-color: #5a4319; /*ändrar bakgrundsfärg när man drar muspekaren över*/
+}
+
+/*Gör headers bruna*/
+h1, h2, h3 {
+	color: rgb(95, 56, 19);
+}
+
+/* Jag lägger även till regler för border så att den får en svart linje och bakgrundsfärg*/
+table {
+	background-color: #dd93f0;
+	border: solid;
+}
+
+/* Jag lägger även till regler för kolumnerna och raderna i tabellen så att de får lite space och en svart smal linje*/
+th, td, tr {
+	padding: 5px;
+	border: solid;
+	border-width: thin;
+}
+
+li a {
+	color: rgb(14, 63, 10);/*Ändrar färgen  på länktexten*/
+	text-decoration: none; /*Gör så att det inte är understruket*/	
+}
+
+/*Här läggs en hover till så att den interagerar när muspekaren dras över anchor tagen*/
+li a:hover {
+	color: #5a1919; /*ändrar färg på texten när man drar muspekaren över*/
+}
+
+/*stylar footern*/
+footer {
+	background-color: burlywood;
+	padding-top: 30px;
+}
+/*ha ordet kontakt i mitten*/
+.wrapper1 {
+	text-align: center;
+}
+
+/*grid 3 kolumner*/
+.wrapper2 {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+	margin: 3em;
+	grid-auto-rows: 100px;
+  }
+
